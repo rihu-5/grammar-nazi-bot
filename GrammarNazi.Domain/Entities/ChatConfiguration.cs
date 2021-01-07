@@ -43,7 +43,7 @@ namespace GrammarNazi.Domain.Entities
         /// </summary>
         public List<string> WhiteListWords { get; set; } = new();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (obj is ChatConfiguration chatConfiguration)
                 return ChatId == chatConfiguration.ChatId;

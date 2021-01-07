@@ -75,7 +75,7 @@ namespace GrammarNazi.App.HostedServices
             await Task.Delay(Timeout.Infinite, stoppingToken);
         }
 
-        private async Task OnMessageReceived(object sender, MessageEventArgs messageEvent)
+        private async Task OnMessageReceived(object? sender, MessageEventArgs messageEvent)
         {
             var message = messageEvent.Message;
 

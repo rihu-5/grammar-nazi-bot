@@ -5,7 +5,10 @@ namespace GrammarNazi.Core.Extensions
 {
     public static class BuiltInTypesExtensions
     {
-        public static string Join(this IEnumerable<string> list, string separator = ",") => string.Join(separator, list);
+        public static string Join(this IEnumerable<string?> list, string separator = ",")
+        {
+            return string.Join(separator, list);
+        }
 
         public static bool IsAssignableToEnum<T>(this int val)
             where T : Enum
