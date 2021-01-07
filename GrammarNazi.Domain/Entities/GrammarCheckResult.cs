@@ -16,9 +16,9 @@ namespace GrammarNazi.Domain.Entities
         /// <summary>
         /// List of Corrections
         /// </summary>
-        public IEnumerable<GrammarCorrection> Corrections { get; }
+        public IEnumerable<GrammarCorrection>? Corrections { get; }
 
-        public GrammarCheckResult(IEnumerable<GrammarCorrection> corrections)
+        public GrammarCheckResult(IEnumerable<GrammarCorrection>? corrections)
         {
             Corrections = corrections;
         }
