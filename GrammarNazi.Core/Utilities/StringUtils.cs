@@ -27,6 +27,13 @@ namespace GrammarNazi.Core.Utilities
         public static string RemoveSpecialCharacters(string str) => Regex.Replace(str, "[^0-9a-zñA-ZÑÀ-ÿ]+", "");
 
         /// <summary>
+        /// It will remove links from the given string
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>String without special characters</returns>
+        public static string RemoveLinks(string str) => Regex.Replace(str, @"(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)", "").Trim();
+
+        /// <summary>
         /// Remove emojis from a string
         /// </summary>
         /// <param name="str"></param>
