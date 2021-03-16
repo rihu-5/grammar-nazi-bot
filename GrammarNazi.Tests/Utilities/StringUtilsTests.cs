@@ -117,5 +117,18 @@ namespace GrammarNazi.Tests.Utilities
             // Assert
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData("www.google.com", "")]
+        [InlineData("Checkout the repo https://github.com/nminaya/grammar-nazi-bot", "Checkout the repo")]
+        [InlineData("Checkout my youtube channel youtube.com/user/123456", "Checkout my youtube channel")]
+        public void RemoveLinks_GivenString_Should_ReturnsExpectedResult(string actual, string expected)
+        {
+            // Arrange > Act
+            var result = StringUtils.RemoveLinks(actual);
+
+            // Assert
+            Assert.Equal(expected, result);
+        }
     }
 }
