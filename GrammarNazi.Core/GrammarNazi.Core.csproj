@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+	<PackageReference Include="MongoDB.Driver" Version="2.12.3" />
     <PackageReference Include="NTextCat" Version="0.3.65" />
     <PackageReference Include="Octokit" Version="0.50.0" />
     <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.1" />
